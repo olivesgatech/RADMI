@@ -1,0 +1,42 @@
+# RADMI default configuration
+
+# data
+data:
+  train_seismic: "data/train/train_seismic.npy"
+  train_labels: "data/train/train_labels.npy"
+  test_seismic: "data/test_once/test1_seismic.npy"
+  test_labels: "data/test_once/test1_labels.npy"
+  train_val_split: 0.9
+
+# model
+model:
+  n_classes: 6
+  out_channels: [8, 10, 30, 40, 60]
+
+# training
+training:
+  num_epochs: 300
+  batch_size: 24
+  learning_rate: 0.001
+  weight_decay: 0.00001
+  recon_weight: 0.3
+
+# RADMI
+radmi:
+  patch_size: 4
+  stride: 1
+  max_channels: 100
+
+# MC-Dropout
+mc_dropout:
+  dropout_rates: [0.1, 0.1, 0.1, 0.1]
+  n_forward: 20
+
+# deep ensemble
+ensemble:
+  n_members: 30
+
+# paths
+paths:
+  checkpoint_dir: "checkpoints"
+  results_dir: "results"
