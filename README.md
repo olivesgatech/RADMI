@@ -1,5 +1,7 @@
 # RADMI: Resolution-Aggregated Decoder Mutual Information
 
+[![arXiv](https://img.shields.io/badge/arXiv-2605.01502-b31b1b.svg)](https://arxiv.org/abs/2605.01502)
+
 Uncertainty estimation for semantic segmentation using mutual information between decoder layers.
 
 ## Overview
@@ -108,6 +110,9 @@ RADMI/
 ```
 
 ## Links
+
+Paper: https://arxiv.org/abs/2605.01502
+
 Associated Website: https://alregib.ece.gatech.edu/
 
 ## License
